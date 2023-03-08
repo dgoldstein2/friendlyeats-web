@@ -1,0 +1,60 @@
+[debug] [2023-03-08T19:42:20.156Z] ----------------------------------------------------------------------
+[debug] [2023-03-08T19:42:20.157Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start --only hosting
+[debug] [2023-03-08T19:42:20.157Z] CLI Version:   11.24.1
+[debug] [2023-03-08T19:42:20.157Z] Platform:      darwin
+[debug] [2023-03-08T19:42:20.157Z] Node Version:  v18.12.1
+[debug] [2023-03-08T19:42:20.158Z] Time:          Wed Mar 08 2023 14:42:20 GMT-0500 (Eastern Standard Time)
+[debug] [2023-03-08T19:42:20.158Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-08T19:42:20.209Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-08T19:42:20.209Z] > authorizing via signed-in user (dgoldstein0406@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2023-03-08T19:42:20.591Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] ⚠  hosting: Hosting Emulator unable to start on port 5000, starting on 5002 instead. {"metadata":{"emulator":{"name":"hosting"},"message":"Hosting Emulator unable to start on port 5000, starting on 5002 instead."}}
+[debug] [2023-03-08T19:42:20.591Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-03-08T19:42:20.591Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5002}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-03-08T19:42:20.596Z] [hub] writing locator at /var/folders/x2/pfk8g9qs7c9dmz8ldbwl9_m00000gn/T/hub-friendlyeats-13efb.json
+[debug] [2023-03-08T19:42:20.603Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/friendlyeats-13efb/sites 
+[debug] [2023-03-08T19:42:21.263Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/friendlyeats-13efb/sites 200
+[debug] [2023-03-08T19:42:21.263Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/friendlyeats-13efb/sites {"sites":[{"name":"projects/friendlyeats-13efb/sites/friendlyeats-13efb","defaultUrl":"https://friendlyeats-13efb.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-03-08T19:42:21.264Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-13efb/webApps/-/config [none]
+[debug] [2023-03-08T19:42:21.919Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-13efb/webApps/-/config 200
+[debug] [2023-03-08T19:42:21.920Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-13efb/webApps/-/config {"projectId":"friendlyeats-13efb","storageBucket":"friendlyeats-13efb.appspot.com","apiKey":"AIzaSyBDFWtVVDWiPPFo9cSh5rwRMDl3walT-DU","authDomain":"friendlyeats-13efb.firebaseapp.com","messagingSenderId":"691735164668"}
+[debug] [2023-03-08T19:42:21.928Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-13efb [none]
+[debug] [2023-03-08T19:42:22.446Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-13efb 200
+[debug] [2023-03-08T19:42:22.446Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-13efb {"projectId":"friendlyeats-13efb","projectNumber":"691735164668","displayName":"friendlyeats","name":"projects/friendlyeats-13efb","resources":{"hostingSite":"friendlyeats-13efb"},"state":"ACTIVE","etag":"1_8f4879a3-6f55-46bf-aa48-347201f57ac6"}
+[info] i  hosting[friendlyeats-13efb]: Serving hosting files from: ./ {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1m./\u001b[22m"}}
+[info] ✔  hosting[friendlyeats-13efb]: Local server: http://127.0.0.1:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5002\u001b[22m\u001b[24m"}}
+[warn] ⚠  emulators: The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5002 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-03-08T19:42:30.352Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.6.6/firebase-app-compat.js [none]
+[info] i  hosting: 127.0.0.1 - - [08/Mar/2023:19:42:30 +0000] "GET /__/firebase/init.js HTTP/1.1" 200 - "http://127.0.0.1:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [08/Mar/2023:19:42:30 +0000] \"GET /__/firebase/init.js HTTP/1.1\" 200 - \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\""}}
+[debug] [2023-03-08T19:42:30.355Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.6.6/firebase-auth-compat.js [none]
+[debug] [2023-03-08T19:42:30.356Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore-compat.js [none]
+[info] i  hosting: 127.0.0.1 - - [08/Mar/2023:19:42:30 +0000] "GET /scripts/FriendlyEats.js HTTP/1.1" 200 - "http://127.0.0.1:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [08/Mar/2023:19:42:30 +0000] \"GET /scripts/FriendlyEats.js HTTP/1.1\" 200 - \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [08/Mar/2023:19:42:30 +0000] "GET /scripts/FriendlyEats.View.js HTTP/1.1" 200 - "http://127.0.0.1:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [08/Mar/2023:19:42:30 +0000] \"GET /scripts/FriendlyEats.View.js HTTP/1.1\" 200 - \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [08/Mar/2023:19:42:30 +0000] "GET /scripts/FriendlyEats.Mock.js HTTP/1.1" 200 - "http://127.0.0.1:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [08/Mar/2023:19:42:30 +0000] \"GET /scripts/FriendlyEats.Mock.js HTTP/1.1\" 200 - \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [08/Mar/2023:19:42:30 +0000] "GET /scripts/FriendlyEats.Data.js HTTP/1.1" 200 - "http://127.0.0.1:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [08/Mar/2023:19:42:30 +0000] \"GET /scripts/FriendlyEats.Data.js HTTP/1.1\" 200 - \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\""}}
+[debug] [2023-03-08T19:42:30.400Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.6.6/firebase-app-compat.js 200
+[debug] [2023-03-08T19:42:30.400Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.6.6/firebase-app-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [08/Mar/2023:19:42:30 +0000] "GET /__/firebase/9.6.6/firebase-app-compat.js HTTP/1.1" 200 5764 "http://127.0.0.1:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [08/Mar/2023:19:42:30 +0000] \"GET /__/firebase/9.6.6/firebase-app-compat.js HTTP/1.1\" 200 5764 \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\""}}
+[debug] [2023-03-08T19:42:30.407Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.6.6/firebase-auth-compat.js 200
+[debug] [2023-03-08T19:42:30.408Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.6.6/firebase-auth-compat.js [stream]
+[debug] [2023-03-08T19:42:30.409Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore-compat.js 200
+[debug] [2023-03-08T19:42:30.409Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [08/Mar/2023:19:42:30 +0000] "GET /__/firebase/9.6.6/firebase-auth-compat.js HTTP/1.1" 200 35522 "http://127.0.0.1:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [08/Mar/2023:19:42:30 +0000] \"GET /__/firebase/9.6.6/firebase-auth-compat.js HTTP/1.1\" 200 35522 \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [08/Mar/2023:19:42:30 +0000] "GET /__/firebase/9.6.6/firebase-firestore-compat.js HTTP/1.1" 200 84803 "http://127.0.0.1:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [08/Mar/2023:19:42:30 +0000] \"GET /__/firebase/9.6.6/firebase-firestore-compat.js HTTP/1.1\" 200 84803 \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\""}}
